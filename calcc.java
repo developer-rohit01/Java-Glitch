@@ -130,7 +130,55 @@ import java.awt.event.*;
             t1.setText("");
         }
 
-      
+        if (evt.getSource() == f1) {
+            String rs = t1.getText();
+            op1 = Integer.valueOf(rs);
+            sym = "+";
+            t1.setText("");
+        } if (evt.getSource() == f2) {
+            String rs = t1.getText();
+            op1 = Integer.valueOf(rs);
+            sym = "-";
+            t1.setText("");
+        }
+        if (evt.getSource() == f3) {
+            String rs = t1.getText();
+            op1 = Integer.valueOf(rs);
+            sym = "*";
+            t1.setText("");
+        }
+        if (evt.getSource() == f4) {
+            String rs = t1.getText();
+            op1 = Integer.valueOf(rs);
+            sym = "/";
+            t1.setText("");
+        }
+           else if (evt.getSource() == f5) {
+                String rs = t1.getText();
+                op2 = Integer.valueOf(rs);
+                if (sym.equals("+")) {
+                    res = op1 + op2;
+                    String s = String.valueOf(res);
+                    t1.setText(s);
+                }
+                if (sym.equals("-")) {
+                res = op1 - op2;
+                String s = String.valueOf(res);
+                t1.setText(s);
+            }
+            if (sym.equals("*")) {
+                res = op1 * op2;
+                String s = String.valueOf(res);
+                t1.setText(s);
+            }
+            if (sym.equals("/")) {
+                res = op1 / op2;
+                String s = String.valueOf(res);
+                t1.setText(s);
+            }
+            }
+
+        }
     public static  void main(String[] args)
     {
         completecal ca=new completecal();
