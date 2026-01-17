@@ -65,3 +65,10 @@ class Product {
 
             products.add(new Product(id, name, price, category));
         }
+
+        // Display all products
+        System.out.println("\n--- All Products ---");
+        for (Product p : products) {
+            System.out.println(p.getId() + " " + p.getName() + " " +
+                               p.getPrice() + " " + p.getCategory());
+        }
