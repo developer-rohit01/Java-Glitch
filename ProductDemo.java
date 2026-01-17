@@ -90,3 +90,39 @@ class Product {
 
         System.out.println("Min Price Product: " +
                 minProduct.getName() + " - " + minProduct.getPrice());
+
+
+         // Category-based calculations
+        System.out.print("\nEnter category to calculate statistics: ");
+        String searchCategory = sc.next();
+
+        double sum = 0;
+        int count = 0;
+        double catMax = Double.MIN_VALUE;
+        double catMin = Double.MAX_VALUE;
+
+        for (Product p : products) {
+            if (p.getCategory().equalsIgnoreCase(searchCategory)) {
+                sum += p.getPrice();
+                count++;
+
+                if (p.getPrice() > catMax)
+                    catMax = p.getPrice();
+
+                if (p.getPrice() < catMin)
+                    catMin = p.getPrice();
+            }
+        }
+
+        if (count > 0) {
+            System.out.println("\nCategory: " + searchCategory);
+            System.out.println("Average Price: " + (sum / count));
+            System.out.println("Max Price: " + catMax);
+            System.out.println("Min Price: " + catMin);
+        } else {
+            System.out.println("\nNo products found in this category.");
+        }
+
+        sc.close();
+    }
+}
