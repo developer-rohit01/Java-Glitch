@@ -72,3 +72,21 @@ class Product {
             System.out.println(p.getId() + " " + p.getName() + " " +
                                p.getPrice() + " " + p.getCategory());
         }
+
+         // Find max and min price product
+        Product maxProduct = products.get(0);
+        Product minProduct = products.get(0);
+
+        for (Product p : products) {
+            if (p.getPrice() > maxProduct.getPrice())
+                maxProduct = p;
+
+            if (p.getPrice() < minProduct.getPrice())
+                minProduct = p;
+        }
+
+        System.out.println("\nMax Price Product: " +
+                maxProduct.getName() + " - " + maxProduct.getPrice());
+
+        System.out.println("Min Price Product: " +
+                minProduct.getName() + " - " + minProduct.getPrice());
