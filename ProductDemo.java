@@ -14,10 +14,28 @@ class Product {
         this.category = category;
     }
 
+    // Getters
+    public int getId() {
+        return id;
+    }
 
+    public String getName() {
+        return name;
+    }
 
+    public double getPrice() {
+        return price;
+    }
 
+    public String getCategory() {
+        return category;
+    }
 
+    // Setters
+    public void setPrice(double price) {
+        this.price = price;
+    }
+}
 
 
     public class ProductDemo {
