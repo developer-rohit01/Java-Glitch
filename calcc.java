@@ -9,7 +9,7 @@ import java.awt.event.*;
     static JTextField t1;
     String [] lan={"select language","c","c==","java"};
     JButton b0,b1,b2,b3,b4,b5,b6,b7,b8,b9,f1 ,f2,f3 ,f4 ,f5, f6;
-    JComboBox c1;
+   
     public completecal()
     {
         setLayout(null);
@@ -33,7 +33,7 @@ import java.awt.event.*;
         f5=new JButton("=");
         f6=new JButton("Clear");
 
-        c1=new JComboBox(lan);
+        
         t1.setFont(new Font("Serif", Font.PLAIN, 24));
         b1.addActionListener(this);
         b2.addActionListener(this);
@@ -74,7 +74,7 @@ import java.awt.event.*;
         f4.setBounds(70,180,50,20);
         f5.setBounds(140,180,50,20);
         f6.setBounds(10,210,90,20);
-       c1.setBounds(10,240,90,20);
+      
         add(t1);
         add(b0);
         add(b1);
@@ -92,7 +92,7 @@ import java.awt.event.*;
         add(f4);
         add(f5);
         add(f6);
-        add(c1);
+       
     }
     public void actionPerformed(ActionEvent evt) {
 
