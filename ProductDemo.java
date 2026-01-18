@@ -122,6 +122,7 @@ class Product {
         } else {
             System.out.println("\nNo products found in this category.");
         }
+        
 
         sc.close();
     }
