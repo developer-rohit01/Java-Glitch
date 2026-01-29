@@ -31,6 +31,20 @@ public class WhileLoopMaster {
 
         System.out.println("Sum of digits = " + sum);
 
+         // 3. Reverse of number
+        System.out.print("\nEnter a number to reverse: ");
+        int revNum = sc.nextInt();
+
+        int reverse = 0;
+
+        while (revNum != 0) {
+            int digit = revNum % 10;
+            reverse = reverse * 10 + digit;
+            revNum = revNum / 10;
+        }
+
+        System.out.println("Reversed number = " + reverse);
+
        
 
         sc.close();
