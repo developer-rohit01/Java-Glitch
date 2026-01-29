@@ -55,6 +55,25 @@ public class WhileLoopMaster {
         }
         System.out.println("Factorial = " + factorial);
 
+        // 5. Check for prime number
+        System.out.print("\nEnter a number to check if it's prime: ");
+        int primeNum = sc.nextInt();
+        boolean isPrime = true;
+        i = 2;
+        while (i <= primeNum / 2) {
+            if (primeNum % i == 0) {
+                isPrime = false;
+                break;
+            }
+            i++;
+        }               
+        if (isPrime && primeNum > 1)
+            System.out.println(primeNum + " is a prime number.");
+        else
+            System.out.println(primeNum + " is not a prime number.");
+
+            
+
         sc.close();
     }
 }
