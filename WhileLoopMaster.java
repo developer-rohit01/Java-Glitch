@@ -45,7 +45,15 @@ public class WhileLoopMaster {
 
         System.out.println("Reversed number = " + reverse);
 
-       
+        // 4. Factorial of a number
+        System.out.print("\nEnter a number to find factorial: ");
+        int factNum = sc.nextInt(); 
+        int factorial = 1;
+        while (factNum > 0) {
+            factorial = factorial * factNum;
+            factNum--;
+        }
+        System.out.println("Factorial = " + factorial);
 
         sc.close();
     }
