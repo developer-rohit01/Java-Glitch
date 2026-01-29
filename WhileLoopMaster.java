@@ -17,6 +17,21 @@ public class WhileLoopMaster {
             System.out.print(i + " ");
             i++;
         }
+         
+           // 2. Sum of digits
+        System.out.print("\n\nEnter a number to find sum of digits: ");
+        int num = sc.nextInt();
+
+        int sum = 0;
+
+        while (num != 0) {
+            sum = sum + (num % 10);
+            num = num / 10;
+        }
+
+        System.out.println("Sum of digits = " + sum);
+
+       
 
         sc.close();
     }
