@@ -72,7 +72,21 @@ public class WhileLoopMaster {
         else
             System.out.println(primeNum + " is not a prime number.");
 
-            
+
+        // 6. Fibonacci series up to n terms
+        System.out.print("\nEnter number of terms for Fibonacci series: ");     
+        int terms = sc.nextInt();
+        int a = 0, b = 1;
+        System.out.println("Fibonacci series:");
+        i = 1;
+        while (i <= terms) {
+            System.out.print(a + " ");
+            int next = a + b;
+            a = b;
+            b = next;
+            i++;
+        }
+        
 
         sc.close();
     }
