@@ -86,6 +86,9 @@ public class WhileLoopMaster {
             b = next;
             i++;
         }
+
+        
+        // Close the scanner
         
 
         sc.close();
