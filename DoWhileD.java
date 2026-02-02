@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
-public class DoWhileDemo {
-
+public class DoWhileD {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
