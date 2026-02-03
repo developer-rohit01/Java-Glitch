@@ -18,7 +18,7 @@ public class CountDigits {
             num = num / 10;
         }
 
-        System.out.println(count);
+        System.out.println("The number count is= "+count);
         sc.close();
     }
 
