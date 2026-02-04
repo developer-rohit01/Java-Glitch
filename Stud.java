@@ -9,7 +9,7 @@ class Student {
     }
 }
 
-public class main {
+public class Stud {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
