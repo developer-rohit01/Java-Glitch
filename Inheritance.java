@@ -1,4 +1,4 @@
-class Animal {
+ class Animal {
     void eat() {
         System.out.println("Animal eats");
     }
@@ -14,7 +14,7 @@ public class Inheritance {
     public static void main(String[] args) {
 
         Dog d = new Dog();
-        d.eat();   // inherited
+        d.eat();   // inherited by animal
         d.bark();  // own
     }
 }
