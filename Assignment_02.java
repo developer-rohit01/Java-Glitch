@@ -6,7 +6,7 @@ public class Assignment_02 {
 
         Scanner sc = new Scanner(System.in);
 
-        // -------- 1D Array Input --------
+        // -------- 1D ARRAY INPUT --------
         System.out.print("Enter size of 1D array: ");
         int n = sc.nextInt();
 
@@ -17,12 +17,13 @@ public class Assignment_02 {
             numbers[i] = sc.nextInt();
         }
 
-        System.out.println("\n1D Array:");
+        // Display using Enhanced for-loop
+        System.out.println("\n1D Array Elements:");
         for (int num : numbers) {
             System.out.print(num + " ");
         }
 
-        // -------- 2D Array Input --------
+        // -------- 2D ARRAY INPUT --------
         System.out.print("\n\nEnter number of rows: ");
         int rows = sc.nextInt();
 
@@ -39,15 +40,15 @@ public class Assignment_02 {
             }
         }
 
-        System.out.println("\n2D Array:");
-        for (int i = 0; i < rows; i++) {
-            for (int j = 0; j < cols; j++) {
-                System.out.print(matrix[i][j] + " ");
+        // Display using Enhanced for-loop
+        System.out.println("\n2D Array Elements:");
+        for (int[] row : matrix) {
+            for (int value : row) {
+                System.out.print(value + " ");
             }
             System.out.println();
         }
 
         sc.close();
     }
-    
 }
