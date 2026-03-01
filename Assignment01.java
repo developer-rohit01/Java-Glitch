@@ -11,7 +11,7 @@ public class Assignment01 {
     char charVar = 'A';           // single character
     
     // String (Reference Data Type)
-    String strVar = "Hello Java";
+    String strVar = "Hello Java";   
     
     System.out.println("=== Data Types ===");
     System.out.println("Byte: " + byteVar);
