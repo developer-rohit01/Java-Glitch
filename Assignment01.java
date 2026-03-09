@@ -81,6 +81,10 @@ public class Assignment01 {
 
     String[] fruits = {"Apple", "Banana", "Orange"};
     System.out.println("\nFruit array:");
+
+
+
+    
     for (String fruit : fruits) {
       System.out.println(fruit);
     }
