@@ -51,4 +51,4 @@ public class Assignment_02 {
 
         sc.close();
     }
-}
+} 
