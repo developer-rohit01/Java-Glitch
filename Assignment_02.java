@@ -17,7 +17,7 @@ public class Assignment_02 {
             numbers[i] = sc.nextInt();
         }
 
-        // Display using Enhanced for-loop
+        // Display array using Enhanced for-loop
         System.out.println("\n1D Array Elements:");
         for (int num : numbers) {
             System.out.print(num + " ");
