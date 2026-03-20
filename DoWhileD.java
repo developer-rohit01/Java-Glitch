@@ -9,7 +9,7 @@ public class DoWhileD {
         int n = sc.nextInt();
 
         int i = 1;
-
+        // do whilwe use first done then check 
         do {
             System.out.print(i + " ");
             i++;
