@@ -9,7 +9,7 @@ public class Assignment_03 {
         System.out.println("String 1: " + s1);
         System.out.println("String 2: " + s2);
 
-        // 2. String Comparison
+        // 2. String Comparison section
 
         // Using equals()
         System.out.println("\nUsing equals(): " + s1.equals(s2));
@@ -20,7 +20,7 @@ public class Assignment_03 {
         // Using compareTo()
         System.out.println("Using compareTo(): " + s1.compareTo(s2));
 
-        // 3. String Immutability
+        // 3. String Immutability section
         String str = "Java";
         str.concat(" Programming");
 
@@ -30,7 +30,7 @@ public class Assignment_03 {
 
         System.out.println("After concat with assignment: " + str);
 
-        // 4. String Methods
+        // 4. String Methods uses in SOP
 
         String text = "Java Programming";
 
