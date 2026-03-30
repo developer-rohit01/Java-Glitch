@@ -2,7 +2,7 @@ public class Assignment_03 {
 
   public static void main(String[] args) {
 
-        // 1. String Creatio
+        // 1. String Creation
         String s1 = "Hello";
         String s2 = new String("Hello");
 
