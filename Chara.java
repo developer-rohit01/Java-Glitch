@@ -7,6 +7,7 @@ public class Chara {
       System.out.print("Enter the A: ");
       int a=sc.nextInt();
       System.out.print("Enter the B: ");
+// taking character with using indexing
       char b=sc.next().charAt(1);
       
       System.out.println("The A is: "+a);
