@@ -16,7 +16,7 @@ public class ArithmeticOperatorsDemo{
         int sub = a - b;
         System.out.println("Subtraction (a - b) = " + sub);
 
-        // Multiplication
+        // Multiplications
         int mul = a * b;
         System.out.println("Multiplication (a * b) = " + mul);
 
@@ -28,7 +28,7 @@ public class ArithmeticOperatorsDemo{
         int mod = a % b;
         System.out.println("Modulus (a % b) = " + mod);
 
-        // Increment
+        // Increment 
         a++;
         System.out.println("After Increment a++ = " + a);
 
