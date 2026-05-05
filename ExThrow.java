@@ -26,12 +26,11 @@ public class ExThrow {
 
     public static void processMarks(int marks) throws InvalidMarksException {
         if (marks < 0 || marks > 100) {
-            int g = marks/0;
+            
             throw new InvalidMarksException("Marks must be between 0 and 100.");
 
         }
-        // Further processing of marks can be done here
-        int g= marks/0;
+        
 
         
     }
