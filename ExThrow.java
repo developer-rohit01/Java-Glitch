@@ -1,4 +1,3 @@
-// program to process student marks using a method decalared with throws , if marks are negative or greater than 100 , use throw to generate a user-defined exception , use multiple catch blocks to handle different types of exceptions
 
 import java.util.Scanner;
 class InvalidMarksException extends Exception {
@@ -27,11 +26,14 @@ public class ExThrow {
 
     public static void processMarks(int marks) throws InvalidMarksException {
         if (marks < 0 || marks > 100) {
+            int g = marks/0;
             throw new InvalidMarksException("Marks must be between 0 and 100.");
+
         }
         // Further processing of marks can be done here
-        System.out.println("Valid marks: " + marks);
+        int g= marks/0;
 
+        
     }
 }
 
